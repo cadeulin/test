@@ -1,0 +1,177 @@
+$title-color: #484848;
+$primary-color: #737373;
+$bg-color: #FAFAFA;
+$white: #FFFFFF;
+$red: #D23859;
+$pink: #FF446C;
+$blue: #26AFDF;
+$darkBlue: #027BAF;
+$green: #82C31F;
+$darkGreen: #44820D;
+$grey: #c7ccd2;
+$lightGrey: #F1F1F1;
+
+
+@mixin border($design, $opacity) {
+    border: 1px $design rgba(0,0,0,$opacity);
+  }
+
+@mixin border-radius($radius) {
+    border-radius: $radius;
+  }
+
+@mixin circle($color) {
+    @include border-radius(1rem);
+    background-color: $color;
+    color: $white;
+  }
+
+
+body {
+    line-height: 1 !important;
+    color: $primary-color;
+    background-color: $bg-color;
+    padding: 40px 30px;
+    .title {
+        color: $title-color;
+        font-weight: 700 !important;
+    }
+    .bg-light {
+        background-color: $lightGrey !important;
+    }
+    .bg-white {
+        background-color: $white !important;
+    }
+    .bg-blue {
+        background-color: $blue !important;
+    }
+    .bg-green {
+        background-color: $green !important;
+    }
+    .bg-none {
+        background-color: transparent !important;
+        border: none;
+    }
+    .bordered {
+        @include border(solid,.125);
+        @include border-radius(0.25rem);
+    }
+    .credit {
+        @include circle($red);
+        line-height: initial;
+        font-weight: normal !important;
+    }
+    .left {
+        text-align: left;
+    }
+    .right {
+        text-align: right;
+    }
+    .btn.disabled, .btn:disabled {
+        opacity: unset;
+    }
+    .header {
+        padding: 0;
+        .row {
+            align-items: center;
+        }
+        .title {
+            font-size: x-large;
+        }
+        .label {
+            font-size: 14px;
+            .highlight {
+                color: $darkGreen;
+                font-weight: bold;
+            }
+        }
+    }
+    .menu {
+        @include border(solid, .06);
+        @include border-radius(0.5rem);
+        margin: 20px 0px;
+        display: inline-flex;
+        padding: .45rem 1.5rem;
+        align-items: center;
+        font-size: smaller;
+        .btn {
+            background-color: $white !important;
+            color: $primary-color;
+        }
+        .show {
+            width: 200px;
+        }
+        span {
+            padding: 0px 15px;
+        }
+    }
+    .dashboard {
+        .card-header {
+            line-height: 1.2;
+        }
+        .card-body {
+            padding: 0.5rem;
+        }
+        .card-footer {
+            text-align: center;
+        }
+        .subtitle {
+            display: block;
+            font-size: small;
+        }
+        .error {
+            @include circle($pink);
+            width: 1.1rem;
+            border: 1px solid black;
+            line-height: 1.2;
+            padding: 0.15rem;
+        }
+        .btn-group {
+            width: 100%;
+            margin-bottom: .3rem;
+            .done {
+                padding: 0.25rem;
+            }
+            .active {
+                color: $white;
+                font-size: 1.5rem;
+                padding: 0 .75rem;
+            }
+        }
+        .btn {
+            padding: 0.25rem .75rem;
+        }
+        .available {
+            @include border(dashed, 0.125);
+            @include border-radius(0.25rem);
+            color: $grey;
+            width: 100%;
+            text-align: left;
+            font-size: 0.9rem;
+            padding: 0.8rem 1rem;
+            margin-bottom: .3rem;
+        }
+        .submit {
+            @include border-radius(0.5rem);
+            border: 3px double #26AFDF;
+            background-color: #027BAF;
+            color: white;
+            margin: .3em;
+            font-size: 18px;
+            padding: 0.4em 0.8em;
+        }
+        .row {
+            font-size: 0.7rem;
+            color: $grey;
+            .new {
+                color: $darkBlue;
+            }
+            .subject {
+                font-size: 0.9rem;
+            }
+            .highlight {
+                color: $title-color;
+            }
+        }
+    }
+}

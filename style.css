@@ -1,0 +1,152 @@
+body {
+  line-height: 1 !important;
+  color: #737373;
+  background-color: #FAFAFA;
+  padding: 40px 30px;
+}
+body .title {
+  color: #484848;
+  font-weight: 700 !important;
+}
+body .bg-light {
+  background-color: #F1F1F1 !important;
+}
+body .bg-white {
+  background-color: #FFFFFF !important;
+}
+body .bg-blue {
+  background-color: #26AFDF !important;
+}
+body .bg-green {
+  background-color: #82C31F !important;
+}
+body .bg-none {
+  background-color: transparent !important;
+  border: none;
+}
+body .bordered {
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+}
+body .credit {
+  border-radius: 1rem;
+  background-color: #D23859;
+  color: #FFFFFF;
+  line-height: initial;
+  font-weight: normal !important;
+}
+body .left {
+  text-align: left;
+}
+body .right {
+  text-align: right;
+}
+body .btn.disabled, body .btn:disabled {
+  opacity: unset;
+}
+body .header {
+  padding: 0;
+}
+body .header .row {
+  align-items: center;
+}
+body .header .title {
+  font-size: x-large;
+}
+body .header .label {
+  font-size: 14px;
+}
+body .header .label .highlight {
+  color: #44820D;
+  font-weight: bold;
+}
+body .menu {
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 0.5rem;
+  margin: 20px 0px;
+  display: inline-flex;
+  padding: 0.45rem 1.5rem;
+  align-items: center;
+  font-size: smaller;
+}
+body .menu .btn {
+  background-color: #FFFFFF !important;
+  color: #737373;
+}
+body .menu .show {
+  width: 200px;
+}
+body .menu span {
+  padding: 0px 15px;
+}
+body .dashboard .card-header {
+  line-height: 1.2;
+}
+body .dashboard .card-body {
+  padding: 0.5rem;
+}
+body .dashboard .card-footer {
+  text-align: center;
+}
+body .dashboard .subtitle {
+  display: block;
+  font-size: small;
+}
+body .dashboard .error {
+  border-radius: 1rem;
+  background-color: #FF446C;
+  color: #FFFFFF;
+  width: 1.1rem;
+  border: 1px solid black;
+  line-height: 1.2;
+  padding: 0.15rem;
+}
+body .dashboard .btn-group {
+  width: 100%;
+  margin-bottom: 0.3rem;
+}
+body .dashboard .btn-group .done {
+  padding: 0.25rem;
+}
+body .dashboard .btn-group .active {
+  color: #FFFFFF;
+  font-size: 1.5rem;
+  padding: 0 0.75rem;
+}
+body .dashboard .btn {
+  padding: 0.25rem 0.75rem;
+}
+body .dashboard .available {
+  border: 1px dashed rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+  color: #c7ccd2;
+  width: 100%;
+  text-align: left;
+  font-size: 0.9rem;
+  padding: 0.8rem 1rem;
+  margin-bottom: 0.3rem;
+}
+body .dashboard .submit {
+  border-radius: 0.5rem;
+  border: 3px double #26AFDF;
+  background-color: #027BAF;
+  color: white;
+  margin: 0.3em;
+  font-size: 18px;
+  padding: 0.4em 0.8em;
+}
+body .dashboard .row {
+  font-size: 0.7rem;
+  color: #c7ccd2;
+}
+body .dashboard .row .new {
+  color: #027BAF;
+}
+body .dashboard .row .subject {
+  font-size: 0.9rem;
+}
+body .dashboard .row .highlight {
+  color: #484848;
+}
+
+/*# sourceMappingURL=style.css.map */

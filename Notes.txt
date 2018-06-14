@@ -1,0 +1,5 @@
+- Used Bootstrap and jQuery only
+- Used default checkbox, no Glyphicons imported
+- Used npm SASS to render .css file
+
+- Can be used with Angular for custom variable and element handling
